@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #ff7833;
+    --seconder-color: #31333b;
+    --text-color: #e7e7e7;
+    --background: #444856;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.main_header {
+    flex: 0 0 26rem;
+    background-color: var(--seconder-color);
+}
+
+.main {
+    background-color: var(--background);
+    flex: 1 0;
+}
+
+a {
+    color: inherit;
+}
+
+.main, .main_header {
+
+    font-size: 1.6rem;
+}
+
+.photo_perfil {
+    max-width: 10rem;
+    padding: 1rem;
+}
+
+.main_nave {
+    text-align: center;
+}
+
+.lista {
+    padding: 0;
+    list-style-type: none;
+}
+
+.main_nave ul a {
+    display: block;
+    text-decoration: none;
+    padding: 1.2rem 0;
+    transition: padding-right .2s, background-color .4s;
+    background-color: transparent;
+}
+
+.main_nave ul a:hover {
+    background-color: var(--background);
+    padding-right: 1rem;
+}
